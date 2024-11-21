@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+        
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #ded;
+                
+            }
+                 .asd {
+                width: 100%;
+                height: 80px;
+                background-color: green;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .asd h1 {
+                color: white;
+                font-size: 35px;
+            }
+            .asd ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+            .asd ul li {
+                margin-left: 10px;
+                padding: 8px;
+                border-radius: 10px;
+                transition: 0.3s;
+            }
+            .asd ul li a {
+                text-decoration: none;
+                color: #ded;
+                font-size: 20px;
+            }
+            .asd ul li:hover {
+                background-color: red;
+            }
+            .content-section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px;
+                gap: 30px;
+                background: rgba(14, 180, 193, 0.9);
+            }
+            .image-container {
+                order: 2;
+            }
+            .image-container img {
+                width: 300px;
+                height: auto;
+                border-radius: 8px;
+            }
+            .text-container {
+                max-width: 500px;
+            }
+            .text-container h1 {
+                color: #fff;
+                font-size: 24px;
+                margin: 0;
+            }
+            .text-container p {
+                color: #fff;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+            .text-container button {
+                margin-top: 10px;
+                padding: 10px 20px;
+                background-color: green;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .text-container button:hover {
+                background-color: darkgreen;
+            }
+            button{
+                color: white;
+                background-color: red;
+                border: none;
+                border-radius: 5px;
+                margin-top: 10px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: blue;
+            }
+            .red {
+                    display: flex;
+                    justify-content: center;
+                }
+
+            .der {
+                    display: flex;
+                    align-items: center;
+                    
+                }
+
+            .der img {
+                    width: 200px; 
+                    margin-right: 20px;
+                    border-radius: 23px;
+                }
+
+            .text {
+                    max-width: 600px; 
+                }
+                .der {
+                    display: flex;
+                    justify-content: center;
+                  
+                }
+
+            .sancho1 {
+                    display: flex;
+                    align-items: center;
+                }
+
+            .sancho1 img {
+                    width: 200px; 
+                    margin-right: 20px;
+                    border-radius: 23px;
+                }
+
+            .text1 {
+                    max-width: 600px; 
+                }
+                .deer {
+                    display: flex;
+                    justify-content: center;
+                  
+                }
+
+            .sancho2 {
+                    display: flex;
+                    align-items: center;
+                }
+
+            .sancho2 img {
+                    width: 200px; 
+                    margin-right: 20px;
+                    border-radius: 23px;
+                }
+              
+
+            .text2 {
+                    max-width: 600px; 
+                }
+                .deeer {
+                    display: flex;
+                    justify-content: center;
+                  
+                }
+
+            .sancho3 {
+                    display: flex;
+                    align-items: center;
+                }
+
+            .sancho3 img {
+                    width: 200px; 
+                    margin-right: 20px;
+                    border-radius: 23px;
+                }
+
+            .text3 {
+                    max-width: 600px; 
+                }
+                .as{
+                    width: 100%;
+                height: 80px;
+                background-color: black;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                }
+                .as{
+                    color: white;
+                    font-size: 15px;
+                }
+                .as ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+            .as ul li {
+                margin-left: 10px;
+                padding: 8px;
+                border-radius: 10px;
+                transition: 0.3s;
+            }
+            .as ul li a {
+                text-decoration: none;
+                color: #ded;
+                font-size: 20px;
+            }
+            .as ul li:hover {
+                background-color: red;
+            }
+            .sanjarbek{
+                margin: 0;
+                padding: 0;
+                background: #f5f5f5;
+                padding: 20px;
+            }
+            .column {
+                width: 24%;
+                float: left;
+                margin: 7px;
+                background:rgb(255, 230, 230);
+                cursor: pointer;
+            }
+            .image {
+                overflow: hidden;
+            }
+            .image img {
+                width: 100%;
+                transition: transform 1s;
+                filter: grayscale(90%);
+            
+            }
+            .image img:hover {
+                transform: scale(1.5);
+                filter: blur(0);
+                filter: grayscale(0);
+            }
+            p {
+                text-align: center;
+                font-size: 18px;
+            }
+            h1{
+                color:rebeccapurple;
+                text-transform: uppercase;
+            }
+            .x {
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                gap: 110px; 
+                margin: 0px;
+                padding: 10px;
+                background: white;
+                text-align: center;
+            }
+            .x img {
+                width: 350px; 
+                height: auto; 
+                border-radius: 20px;
+            }
+            .q {
+                text-align: center; 
+                
+            }
+
+            .q h1 {
+                font-size: 100px; 
+                margin: 5px 0; 
+            }
+
+            .q h2 {
+                font-size: 90px;
+                margin: 0;
+                color: blue;
+            }
+            .q a {
+                text-decoration: none;
+                color: inherit; 
+            }
+            .left-img {
+                order:0;
+            }
+            .right-img {
+                order: 3; 
+            }
+            .sa{
+                margin-right: 610px;
+            }
+            .we{
+                margin-left: 610px;
+            }
+            .dsa{
+                font-size: 90px;
+                margin: 0;
+                color: blue;
+            }
+            .qwer a{
+                text-decoration: none;
+            }
+         
+        </style>
+    </head>
+    <body>
+        <div class="x">
+           <a href="https://yangiuylar.uz/"> <img src="c:\Users\user\Pictures\Screenshots\Screenshot 2024-11-20 222434.png" alt="Image Left" class="left-img"></a>
+            <div class="q">
+                <h2>
+                   <a href="https://yangiuylar.uz/"> 
+                    <span class="sa">Barcha </span>
+                    <h1>yangi uylar bir</h1>
+                    <span class="we">joyda</span>
+                   </a>
+                </h2>
+            </div>
+           <a href="https://yangiuylar.uz/"> <img src="c:\Users\user\Pictures\Screenshots\Screenshot 2024-11-20 222711.png" alt="Image Right" class="right-img"></a>
+        </div>
+        <br>
+        <header class="asd">
+            <h1>AnsorMed</h1>
+            <ul>
+                <li><a href="">Xizmatlar</a></li>
+                <li><a href="">Dorilar</a></li>
+                <li><a href="">Asal</a></li>
+                <li><a href="">Kontaktlar</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+            <button>Qabulga yozilish</button>
+        </header>
+        <section class="content-section">
+            <div class="text-container">
+                <h1>Tabbiy davolash usullari yordamida kasalliklardan halos bo'ling</h1>
+                <p>Hanjoma,manual terepiya,zuluk va turli tabbiy giyohlar eng ko'p uchraydigan kasaliklarni yengishda yordam beradi.Sog'lig'ingizni o'z ishing profesionallariga topshiring</p>
+                <a href="dars10.html"><button>Qabulga yozilish</button></a>
+            </div>
+            <div class="image-container">
+                <img src="c:\Users\user\Downloads\85ef1a4fe15b83f3bfd722d905d26f00.png" alt="Davolash">
+            </div>
+        </section>
+        <br><br><br>
+       <center><h1>Xizmatlar</h1></center>
+       <br><br><br>
+        <section class="red">
+            <div class="der">
+                <img src="c:\Users\user\Downloads\532db016711e2e982388e3494c3770f1.png" alt="none">
+                <div class="text">
+                    <h1>Hijoma</h1>
+                    <p>Termodinamikaning birinchi qonuni — bu fanning asosiy qonlaridan biri boʻlib, u issiqlik, massa almashinuvi va kimyoviy jarayonlarni amalga oshirishi kerak boʻlgan termodinamik tizimlar uchun energiya saqlanishning umumiy fizik qonunini ifoda qiladi. </p>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br>
+        <section class="der">
+            <div class="sancho1">
+                <img src="c:\Users\user\Downloads\f6ec3ecfd4c3552a738c4d8421651c8f.png" alt="none">
+                <div class="text1">
+                    <h1>Manual terapiya</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam perspiciatis odio molestiae doloremque, ad odit obcaecati, et ut consectetur praesentium a! Dignissimos obcaecati pariatur adipisci ex vero porro reprehenderit? A.</p>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br>
+        <section class="deer">
+            <div class="sancho2">
+                <img src="c:\Users\user\Downloads\girudoterapiya.jpg" alt="none">
+                <div class="text2">
+                    <h1>Zuluk bilan davolash</h1>
+                    <p>Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία — «davolash») — ma’lum kasalliklarni dorivor zuluklar (Hirudo medicinalis) yordamida davolash usuli. Fizioterapevtik muolaja, muqobil tibbiyotga oid sanaladi. Bunday zuluklar ushbu kichik sinf chuvchalchanglariga oid yagona tur hisoblanadi, qolganlari shifobaxsh ta’sir ko’rsatmaydi.</p>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br>
+        <section class="deeer">
+            <div class="sancho3">
+                <img src="c:\Users\user\Downloads\59ec39bf7e6a143c63684dd7d93570f3.jpg" alt="none">
+                <div class="text3">
+                    <h1>Tabbiy dori vositalari</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+       <center><button>Qabulga yozilish</button></center>
+        <br><br><br><br>
+        <section class="content-section">
+            <div class="text-container">
+                <h1>Qabulga ro'yxatdan o'ting</h1>
+                <br><br>
+                <a href="https://www.instagram.com/d1yorbek.akko?igsh=MTQwbmpuM3"><button>Qo'ng'iroq qiling</button></a>  
+               <a href="https://t.me/KAPANA_AX"><button>Telegramdan yozing</button></a>
+            </div>
+        </section>
+        <header class="as">
+            <h1>AnsorMed</h1>
+            <ul>
+                <li><a href="">Xizmatlar</a></li>
+                <li><a href="">Dorilar</a></li>
+                <li><a href="">Asal</a></li>
+                <li><a href="">Kontaktlar</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </header>
+        <br><br><br>
+        <div class="qwer"><a href="https://kun.uz/news/category/jahon"><center><span class="dsa">Yangiliklar</span></center></a></div>
+        <br><br><br>
+       <div class="sanjarbek">
+         <div class="column" data-aos="fade-up-left">
+            <div class="image">
+                <img src="c:\Users\user\Downloads\532db016711e2e982388e3494c3770f1.png">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Beatae dolor odio enim modi magnam assumenda! Tempora, 
+                consectetur sapiente, nostrum dolore numquam nisi error 
+                laudantium ea, magni quod optio similique culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur odio tenetur et! Sequi, neque amet tenetur sunt vel
+                error est maiores libero animi quod quis hic minus, labore qui architecto?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ducimus, 
+                sit quibusdam quo nisi tempore, fugiat doloremque necessitatibus placeat ipsum
+                cumque atque accusantium quam labore illum mollitia animi velit totam.</p>
+        </div>
+        <div class="column" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+            <div class="image">
+                <img src="c:\Users\user\Downloads\f6ec3ecfd4c3552a738c4d8421651c8f.png">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Beatae dolor odio enim modi magnam assumenda! Tempora, 
+                consectetur sapiente, nostrum dolore numquam nisi error 
+                laudantium ea, magni quod optio similique culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur odio tenetur et! Sequi, neque amet tenetur sunt vel
+                error est maiores libero animi quod quis hic minus, labore qui architecto?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ducimus, 
+                sit quibusdam quo nisi tempore, fugiat doloremque necessitatibus placeat ipsum
+                cumque atque accusantium quam labore illum mollitia animi velit totam.</p>
+        </div>
+        <div class="column"  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="image">
+                <img src="c:\Users\user\Downloads\girudoterapiya.jpg">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Beatae dolor odio enim modi magnam assumenda! Tempora, 
+                consectetur sapiente, nostrum dolore numquam nisi error 
+                laudantium ea, magni quod optio similique culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur odio tenetur et! Sequi, neque amet tenetur sunt vel
+                error est maiores libero animi quod quis hic minus, labore qui architecto?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ducimus, 
+                sit quibusdam quo nisi tempore, fugiat doloremque necessitatibus placeat ipsum
+                cumque atque accusantium quam labore illum mollitia animi velit totam.</p>
+        </div>
+        <div class="column" data-aos="fade-up" >
+            <div class="image">
+                <img src="c:\Users\user\Downloads\59ec39bf7e6a143c63684dd7d93570f3.jpg">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Beatae dolor odio enim modi magnam assumenda! Tempora, 
+                consectetur sapiente, nostrum dolore numquam nisi error 
+                laudantium ea, magni quod optio similique culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur odio tenetur et! Sequi, neque amet tenetur sunt vel
+                error est maiores libero animi quod quis hic minus, labore qui architecto?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ducimus, 
+                sit quibusdam quo nisi tempore, fugiat doloremque necessitatibus placeat ipsum
+                cumque atque accusantium quam labore illum mollitia animi velit totam.</p>
+        </div>
+        
+       </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>
